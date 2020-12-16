@@ -11,14 +11,11 @@ public class GameflowConverter implements Converter<GameFlow, GameFlowDTO> {
     public GameFlowDTO convert(GameFlow source) {
         return GameFlowDTO.builder()
                 .userId(source.getUserId())
-                /*
                 .currentClickEntityId(source.getCurrentClickEntityId())
                 .entityComplexity(source.getEntityComplexity())
                 .entityProgressRemaining(source.getEntityProgressRemaining())
                 .lastClickTimestamp(source.getLastClickTimestamp())
                 .userSkill(source.getUserSkill())
-
-                 */
                 .build();
     }
 }
