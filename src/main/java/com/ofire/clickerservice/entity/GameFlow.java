@@ -29,7 +29,4 @@ public class GameFlow {
     private BigDecimal entityComplexity;
     @Column("user_skill")
     private BigDecimal userSkill;
-
-
-
 }

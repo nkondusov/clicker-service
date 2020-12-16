@@ -39,5 +39,4 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
     public SchemaAction getSchemaAction() {
         return SchemaAction.valueOf(schemaAction);
     }
-
 }

@@ -25,5 +25,4 @@ public class GameFlowController {
     public GameFlowDTO create(@RequestBody CreateGameflowRequest request){
         return gameflowService.createGameflow(request);
     }
-
 }
