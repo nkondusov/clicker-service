@@ -1,4 +1,4 @@
-package com.ofire.clickerservice.config.entity;
+package com.ofire.clickerservice.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,6 +14,7 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 public class GameFlow {
+
     @PrimaryKey
     private UUID userId;
     @Column

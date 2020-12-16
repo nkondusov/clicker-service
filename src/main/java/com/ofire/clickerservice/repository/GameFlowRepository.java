@@ -1,6 +1,6 @@
 package com.ofire.clickerservice.repository;
 
-import com.ofire.clickerservice.config.entity.GameFlow;
+import com.ofire.clickerservice.entity.GameFlow;
 import org.springframework.data.cassandra.repository.CassandraRepository;
 import org.springframework.stereotype.Repository;
 
