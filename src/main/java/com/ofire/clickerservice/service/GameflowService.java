@@ -35,7 +35,6 @@ public class GameflowService {
         }
 
         return gameflowConverter.convert(gameFlowRepository.save(createNew(createGameflowRequest.getUserId())));
-
     }
 
     private GameFlow createNew(UUID id) {
