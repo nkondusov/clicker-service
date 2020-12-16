@@ -1,7 +1,8 @@
 package com.ofire.clickerservice.controller;
 
 
-import com.ofire.clickerservice.repository.GameFlowRepository;
+import com.ofire.clickerservice.dto.GameFlowDTO;
+import com.ofire.clickerservice.service.GameflowService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,12 +16,11 @@ import java.util.UUID;
 @RequestMapping("/api/v1")
 public class GameFlowController {
 
-    private final GameFlowRepository gameFlowRepository;
+    private final GameflowService gameflowService;
 
     @GetMapping("/gameflow/{id}")
-    public void getById(@PathVariable UUID id){
-        gameFlowRepository.findAll();
-        System.out.println("here");
+    public GameFlowDTO getById(@PathVariable UUID id){
+        return gameflowService.getGameflow(id);
     }
 
 }
